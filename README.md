@@ -113,22 +113,48 @@ outputs/
 - **`face_X_final.png`**: 最终生成的高质量人脸图像 (128×128)
 - **`face_X_denoising_process.png`**: 去噪过程可视化，包含 10 个关键步骤，展示从噪声到清晰人脸的转变
 
-**示例输出**:
-```
-Step 0% → Step 10% → Step 20% → ... → Step 90% → Step 100%
-[噪声]                                            [清晰人脸]
-```
+**生成的人脸样例**:
+
+<div align="center">
+<img src="outputs/generation/face_1_final.png" width="150"/> <img src="outputs/generation/face_2_final.png" width="150"/> <img src="outputs/generation/face_3_final.png" width="150"/> <img src="outputs/generation/face_4_final.png" width="150"/> <img src="outputs/generation/face_5_final.png" width="150"/>
+</div>
+
+**去噪过程可视化样例**:
+
+从噪声到清晰人脸的完整去噪过程：
+
+<div align="center">
+<img src="outputs/generation/face_1_denoising_process.png" width="800"/>
+</div>
+
+<div align="center">
+<img src="outputs/generation/face_2_denoising_process.png" width="800"/>
+</div>
 
 #### 2. 身份插值 (`outputs/interpolation/`)
 
 - **`interpolation_X_to_Y.png`**: 身份 X 到 Y 的完整插值序列可视化
 - **`idX_to_idY_stepN.png`**: 插值的单个步骤图像
 
-**示例输出**:
-```
-t=0.00 → t=0.14 → t=0.29 → t=0.43 → t=0.57 → t=0.71 → t=0.86 → t=1.00
-[身份A]                                                      [身份B]
-```
+**身份插值可视化样例**:
+
+身份 1 到身份 2 的平滑过渡：
+
+<div align="center">
+<img src="outputs/interpolation/interpolation_1_to_2.png" width="800"/>
+</div>
+
+身份 2 到身份 3 的平滑过渡：
+
+<div align="center">
+<img src="outputs/interpolation/interpolation_2_to_3.png" width="800"/>
+</div>
+
+身份 3 到身份 4 的平滑过渡：
+
+<div align="center">
+<img src="outputs/interpolation/interpolation_3_to_4.png" width="800"/>
+</div>
 
 ### 性能参数
 
