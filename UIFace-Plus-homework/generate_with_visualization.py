@@ -7,8 +7,6 @@ UIFace-Plus: 扩散模型人脸生成可视化系统
 2. 集成 Classifier-Free Guidance (CFG) 提升生成质量
 3. 可视化扩散模型的去噪过程（从噪声到清晰人脸）
 
-作者：复旦大学 生成模型课程
-日期：2024年12月
 """
 
 import os
@@ -21,7 +19,7 @@ from tqdm import tqdm
 import yaml
 from pathlib import Path
 
-generation_dir = "E:/FDU/课程/生成模型/TFace-master/generation"
+generation_dir = "/TFace-master/generation"
 uiface_dir = os.path.join(generation_dir, "uiface")
 sys.path.insert(0, uiface_dir)
 
